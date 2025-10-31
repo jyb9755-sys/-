@@ -5,3 +5,44 @@
   agent-id="73318352-be62-45c4-9fd3-124ab1b3c83b"
   language-code="ko"
 ></df-messenger>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응급실 FAQ 챗봇</title>
+
+    <style>
+      df-messenger {
+        /* --df-messenger-속성이름: 색상코드; */
+        
+        /* 1. 챗봇 헤더(제목줄) 스타일 */
+        --df-messenger-header-background-color: #03A9F4;  /* 헤더 배경색 */
+        --df-messenger-header-font-color: #FFFFFF;        /* 헤더 글자색 (흰색) */
+
+        /* 2. 챗봇 말풍선 스타일 */
+        --df-messenger-bot-message: #E1F5FE;     /* 챗봇 말풍선 배경색 */
+        --df-messenger-user-message: #FFFFFF;    /* 사용자 말풍선 배경색 (테두리만 바뀜) */
+        
+        /* 3. 채팅창 전체 배경색 */
+        --df-messenger-chat-background-color: #FAFAFA;
+
+        /* 4. 챗봇 열기 버튼 스타일 */
+        --df-messenger-button-title-color: #FFFFFF;     /* 버튼 글자/아이콘 (흰색) */
+        --df-messenger-button-background-color: #03A9F4; /* 버튼 배경색 */
+      }
+    </style>
+    </head>
+<body>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="응급실 FAQ 챗봇"
+      agent-id="[73318352-be62-45c4-9fd3-124ab1b3c83b]"
+      language-code="ko"
+    ></df-messenger>
+
+</body>
+</html>
