@@ -1,0 +1,81 @@
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="응급실보호자_안내_챗봇"
+  agent-id="73318352-be62-45c4-9fd3-124ab1b3c83b"
+  language-code="ko"
+></df-messenger>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>챗봇</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* 배경색 */
+            color: #333;
+        }
+        .chatbot-container {
+            width: 300px;
+            border: 2px solid #007bff; /* 블루 색상 */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #007bff; /* 블루 색상 */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .messages {
+            padding: 10px;
+            height: 200px;
+            overflow-y: auto;
+            border-bottom: 2px solid #007bff; /* 블루 색상 */
+        }
+        .input-container {
+            display: flex;
+            padding: 10px;
+        }
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #007bff; /* 블루 색상 */
+            border-radius: 5px;
+            outline: none;
+        }
+        .input-container button {
+            background-color: #007bff; /* 블루 색상 */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .input-container button:hover {
+            background-color: #0056b3; /* 다크 블루 색상 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="chatbot-container">
+    <div class="header">
+        의정부 성모병원 응급실
+    </div>
+    <div class="messages">
+        <!-- 메시지가 여기에 표시됩니다 -->
+    </div>
+    <div class="input-container">
+        <input type="text" placeholder="메시지를 입력하세요...">
+        <button>전송</button>
+    </div>
+</div>
+
+</body>
+</html>
