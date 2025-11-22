@@ -76,6 +76,8 @@
 
 &nbsp;     language-code="ko"
 
+&nbsp;     location="asia-northeast1"
+
 &nbsp;   ></df-messenger>
 
 
